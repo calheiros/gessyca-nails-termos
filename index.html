@@ -1,95 +1,19 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Termos e Condições</title>
-<style>
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    max-width: 720px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-    line-height: 1.6;
-    color: #222;
-    background-color: #f9f9f9;
-  }
-  h1 {
-    font-size: 2rem;
-    color: #d9534f;
-    border-bottom: 2px solid #d9534f;
-    padding-bottom: 0.3em;
-  }
-  h2 {
-    font-size: 1.3rem;
-    color: #337ab7;
-    margin-top: 2rem;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 0.25em;
-  }
-  p, li {
-    font-size: 1rem;
-  }
-  ul {
-    padding-left: 1.3em;
-  }
-  blockquote {
-    border-left: 4px solid #d9534f;
-    margin: 1rem 0;
-    padding-left: 1em;
-    color: #555;
-    font-style: italic;
-    background-color: #fff0f0;
-  }
-  hr {
-    border: none;
-    border-top: 1px solid #ddd;
-    margin: 2rem 0;
-  }
-  @media (max-width: 480px) {
-    body {
-      margin: 1rem;
-      padding: 0 0.5rem;
-    }
-  }
-</style>
+  <meta charset="utf-8" />
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
-  <h1>⚠️ Termos e Condições</h1>
-  <p>Ao adquirir o curso, você confirma que leu e concorda com as regras abaixo.<br />
-  Elas existem para manter a organização e garantir que todos recebam o que foi prometido.</p>
-  <hr />
-  <h2>1. Acesso ao Conteúdo</h2>
-  <ul>
-    <li>O acesso é vinculado a <strong>uma única conta</strong> para cada pagamento realizado.</li>
-    <li>Não realizamos <strong>transferência de acesso</strong> para outra conta.</li>
-    <li><strong>Exceção:</strong> caso a conta seja <strong>banida de forma definitiva</strong> e isso seja devidamente comprovado, poderemos avaliar a liberação do acesso em outra conta.</li>
-    <li>Situações como conta invadida, perda de senha ou problemas semelhantes <strong>não</strong> estão cobertas por essa exceção.</li>
-  </ul>
-  <hr />
-  <h2>2. Certificados</h2>
-  <ul>
-    <li>Os certificados de participação são enviados <strong>gratuitamente</strong> após a liberação do acesso ao curso.</li>
-    <li>Caso seja necessária uma <strong>segunda via</strong>, será cobrada uma taxa de <strong>R$ 5,00 por solicitação</strong>.</li>
-  </ul>
-  <blockquote>Essa taxa existe para cobrir custos administrativos e evitar pedidos repetidos desnecessários.</blockquote>
-  <hr />
-  <h2>3. Bônus – Grupo do WhatsApp</h2>
-  <ul>
-    <li>O acesso ao grupo do WhatsApp é um <strong>bônus gratuito</strong> oferecido junto com o curso.</li>
-    <li>A participação está condicionada ao cumprimento das <strong>regras internas do grupo</strong>.</li>
-    <li>O descumprimento dessas regras pode resultar na exclusão do grupo, sem direito a reembolso. O acesso ao curso permanece normalmente.</li>
-    <li>A compra do curso <strong>não garante</strong> permanência ilimitada no grupo.</li>
-  </ul>
-  <hr />
-  <h2>4. Política de Reembolso</h2>
-  <ul>
-    <li>O reembolso poderá ser solicitado somente nos seguintes casos:</li>
-    <ul>
-      <li>Compra duplicada.</li>
-      <li>Solicitação feita <strong>antes</strong> de acessar o conteúdo das aulas <strong>e</strong> receber os certificados.</li>
-    </ul>
-  </ul>
+  <div id="content"></div>
+
+  <script>
+    fetch('arquivo.md')
+      .then(response => response.text())
+      .then(text => {
+        document.getElementById('content').innerHTML = marked.parse(text);
+      })
+      .catch(err => console.error('Erro ao carregar Markdown:', err));
+  </script>
 </body>
 </html>
