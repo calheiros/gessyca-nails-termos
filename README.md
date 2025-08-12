@@ -1,4 +1,4 @@
-# ⚠️ Termos e Condições
+# 📃 Termos e Condições
 
 Ao adquirir o curso, você confirma que leu e concorda com as regras abaixo.  
 Elas existem para manter a organização e garantir que todos recebam o que foi prometido.
