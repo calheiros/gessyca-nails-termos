@@ -1,0 +1,1 @@
+# gessyca-nails-termos
