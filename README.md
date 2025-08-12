@@ -15,8 +15,9 @@ Elas existem para manter a organização e garantir que todos recebam o que foi 
 
 ## 2. Certificados
 - Os certificados de participação são enviados **gratuitamente** após a liberação do acesso ao curso.  
-- Caso seja necessária uma **segunda via**, será cobrada uma taxa de **R$ 5,00 por certificado**.
+- Caso seja necessária uma **segunda via**, será cobrada uma taxa de **R$ 5,00 por solicitação**.
 
+> *Essa taxa existe para cobrir custos administrativos e evitar pedidos repetidos desnecessários.*
 ---
 
 ## 3. Bônus – Grupo do WhatsApp
